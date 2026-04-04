@@ -22,4 +22,6 @@ public class Jobs {
     private String level;
     @NotBlank
     private String benefits;
+    @NotBlank
+    private Company company;
 }
