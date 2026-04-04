@@ -18,14 +18,16 @@ public class CandidateDTO {
     private String curriculum;
 
     public CandidateDTO(){}
-    public CandidateDTO(CandidateEntity entity) {
-        this.idCandidate = entity.getIdCandidate();
-        this.name = entity.getName();
-        this.userName = entity.getUserName();
-        this.email = entity.getEmail();
-        this.password = entity.getPassword();
-        this.description = entity.getDescription();
-        this.curriculum = entity.getCurriculum();
+    public CandidateDTO fromDTO(CandidateEntity entity) {
+        CandidateDTO candidateDTO = new CandidateDTO();
+        candidateDTO.setIdCandidate(entity.getIdCandidate());
+        candidateDTO.setName(entity.getName());
+        candidateDTO.setName(entity.getUserName());
+        candidateDTO.setName(entity.getEmail());
+        candidateDTO.setName(entity.getPassword());
+        candidateDTO.setName(entity.getDescription());
+        candidateDTO.setName(entity.getCurriculum());
+        return candidateDTO;
     }
 
     public static CandidateEntity toEntity(CandidateDTO dto){
