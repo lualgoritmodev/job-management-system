@@ -1,7 +1,7 @@
 package com.lucianogarcia.gestao_vagas.module.candidate.controller;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-import com.lucianogarcia.gestao_vagas.module.entity.CandidateEntity;
+import com.lucianogarcia.gestao_vagas.module.candidate.entity.CandidateEntity;
 import lombok.Data;
 
 import java.util.UUID;
