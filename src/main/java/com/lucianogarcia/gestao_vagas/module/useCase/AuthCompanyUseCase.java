@@ -16,7 +16,7 @@ public class AuthCompanyUseCase {
 
     @Autowired
     private PasswordEncoder passwordEncoder;
-//CONTINUAR DAQUI
+
     public Company execute(AuthCompanyDTO authCompanyDTO) {
         var company = this.companyRepository.findByUserName(authCompanyDTO.getUserName())
                 .orElseThrow(() -> new BadCredentialsException("Login ou senha inválidos"));
