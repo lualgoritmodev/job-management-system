@@ -1,24 +1,18 @@
-package com.lucianogarcia.gestao_vagas.module.entity;
+package com.lucianogarcia.gestao_vagas.module.company.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
-import org.springframework.data.annotation.CreatedDate;
-
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity(name = "company")
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class Company {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -26,6 +20,7 @@ public class Company {
     @NotBlank
     private String userName;
     @NotBlank
+    @Email
     private String emailCompany;
     @NotBlank
     private String password;
@@ -33,6 +28,7 @@ public class Company {
     private String webSite;
     @NotBlank
     private String name;
+    @NotBlank
     @NotBlank
     private String description;
     @CreationTimestamp

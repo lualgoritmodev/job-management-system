@@ -1,8 +1,7 @@
 package com.lucianogarcia.gestao_vagas.module.useCase;
 
 import com.lucianogarcia.gestao_vagas.exception.UserFoundException;
-import com.lucianogarcia.gestao_vagas.module.candidate.controller.CandidateDTO;
-import com.lucianogarcia.gestao_vagas.module.entity.CandidateEntity;
+import com.lucianogarcia.gestao_vagas.module.candidate.entity.CandidateEntity;
 import com.lucianogarcia.gestao_vagas.module.repository.CandidateRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
