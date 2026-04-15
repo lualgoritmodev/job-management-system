@@ -28,7 +28,6 @@ public class AuthCompanyUseCase {
 
         if (!passwordMatches) {
             throw new BadCredentialsException("Login ou senha inválidos");
-        }
 
         return company;
     }
