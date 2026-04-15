@@ -2,7 +2,9 @@ name: "Workflow de Integração Continua"
 
 on:
   push:
-    branches: [ "develop", "main" ]
+    branches-ignore: 
+      - develop
+      - main
   pull_request:
     branches: [ "develop", "main" ]
   schedule:
